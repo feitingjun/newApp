@@ -1,0 +1,61 @@
+@value theme: "../theme.css";
+@value color,bColor from theme;
+
+.musicList{
+	border-bottom: 1px solid #ddd;
+}
+.title{
+    background: bColor;
+    color:color;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.icon{
+	padding: 0 10px;
+	transition: all 0.2s linear;
+}
+.ul{
+	overflow: hidden;
+	transition: all 0.2s linear;
+}
+.ul li{
+	text-indent: 20px;
+	cursor: pointer;
+}
+.ul li:hover{
+	background: #eee;
+}
+.liActive{
+	background: #ddd;
+}
+.nameBox{
+	height: 36px;
+	line-height: 36px;
+	position: relative;
+}
+.details{
+	height: 36px;
+	line-height: 36px;
+}
+.duration{
+	position: absolute;
+	right: 15px;
+}
+.nameBoxActive{
+	height: 52px;
+	line-height: 26px;
+	position: relative;
+}
+.headPortrait{
+	height: 100%;
+	line-height: 52px;
+}
+.headPortrait img{
+	vertical-align: middle;
+	animation: myfirst 4s linear infinite;
+}
+@keyframes myfirst {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
